@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int n;
+    cout<<"Enter the size of array: ";
+    cin >> n;
+
+    long long total = 0;
+    for(int i = 1; i <= n; i++) {
+        total = total+i;
+    }
+
+    long long sum = 0;
+    for(int i = 0; i < n-1; i++) {
+        int x;
+        cin >> x;
+        sum =sum+ x;
+    }
+    cout << "Missing number: " << total - sum << endl;
+    return 0;
+}
